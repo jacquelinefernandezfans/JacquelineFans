@@ -50,6 +50,19 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#999;font-size:13px
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;place-items:center;z-index:200;padding:30px}.modal.open{display:grid}.modal-inner{max-width:900px;max-height:90vh;position:relative}
 .modal img{max-height:78vh;width:auto;max-width:90vw;border-radius:12px}.modal p{margin-top:8px;color:#ddd;text-align:center}.close{position:absolute;right:-10px;top:-45px;border:0;background:none;color:#fff;font-size:34px;cursor:pointer}
 .hidden{display:none!important}.no-results{padding:24px;background:var(--panel);border:1px solid var(--line);border-radius:12px;color:var(--muted);margin-top:16px}
+
+.cannes-section{background:#0c0c0f}
+.cannes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cannes-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 16px 45px rgba(0,0,0,.22)}
+.cannes-card>a:first-child{display:block;overflow:hidden;background:#18161a}
+.cannes-card img{width:100%;height:440px;object-fit:cover;transition:.3s}.cannes-card>a:first-child:hover img{transform:scale(1.03)}
+.cannes-copy{padding:20px}.cannes-copy h3{font:700 25px Georgia,serif;margin:7px 0}.cannes-copy p{color:var(--muted);font-size:14px;margin-bottom:14px}.cannes-copy a{color:var(--gold2);font-weight:700;font-size:13px}
+.cannes-2026-visual{height:440px;display:flex;align-items:center;justify-content:center;padding:30px;text-align:center;color:#fff;background:radial-gradient(circle at 50% 20%,rgba(231,190,125,.28),transparent 38%),linear-gradient(145deg,#1a1513,#302018 55%,#111116)}
+.cannes-2026-visual .year-badge{font:700 76px Georgia,serif;color:var(--gold);display:block;margin-bottom:18px}.cannes-2026-visual div div{font:700 25px Georgia,serif}.cannes-2026-visual small{display:block;color:#c8c0b8;margin:5px 0 18px}.cannes-2026-visual em{display:inline-block;color:var(--gold2);font-style:normal;font-size:12px;text-transform:uppercase;letter-spacing:1px}
+.cannes-note{margin-top:20px;color:#777;font-size:12px;max-width:900px}.cannes-note strong{color:#aaa}
+@media(max-width:900px){.cannes-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.cannes-grid{grid-template-columns:1fr}.cannes-card img,.cannes-2026-visual{height:380px}}
+
 @media(max-width:900px){.hero-grid,.about-grid{grid-template-columns:1fr}.hero-photo{max-width:520px;margin:auto}.grid,.video-grid,.events{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}nav{display:none}}
 @media(max-width:560px){.grid,.video-grid,.events,.gallery,.facts{grid-template-columns:1fr}.hero{min-height:auto;padding:80px 0}.hero-photo img{height:430px}section{padding:65px 0}h1{font-size:50px}.search input{width:110px}}
 </style>
@@ -57,7 +70,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#999;font-size:13px
 <body>
 <header><div class="container nav">
 <a class="logo" href="#home">Jackie <span>Arabic Fan</span></a>
-<nav><a href="#home">Home</a><a href="#news">News</a><a href="#gallery">Gallery</a><a href="#biography">Biography</a><a href="#films">Films & Work</a><a href="#videos">Videos</a><a href="#events">Events</a></nav>
+<nav><a href="#home">Home</a><a href="#news">News</a><a href="#gallery">Gallery</a><a href="#cannes">Cannes</a><a href="#biography">Biography</a><a href="#films">Films & Work</a><a href="#videos">Videos</a><a href="#events">Events</a></nav>
 <div class="search"><input id="siteSearch" type="search" placeholder="Search..."><button id="searchBtn" type="button">⌕</button></div>
 </div></header>
 
@@ -76,6 +89,36 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#999;font-size:13px
 <article class="card searchable" data-search="Murder 2 breakthrough Housefull 2 Race 2"><div class="card-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/JacquelineFernandez.jpg" alt="Jacqueline Fernandez at a Murder 2 press meet" loading="lazy"></div><div class="card-body"><span class="tag">MILESTONE</span><h3><em>Murder 2</em> and the breakthrough years</h3><p>Wikipedia identifies <em>Murder 2</em> (2011) as her breakthrough role, followed by commercially successful films including <em>Housefull 2</em> and <em>Race 2</em>.</p></div></article>
 <article class="card searchable" data-search="Kick 2014 Judwaa 2 2017 Vikrant Rona 2022"><div class="card-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jacqueline_-_Fernandez.jpg" alt="Jacqueline Fernandez at a 2017 event" loading="lazy"></div><div class="card-body"><span class="tag">HIGHLIGHTS</span><h3>Major commercial successes</h3><p>Her filmography includes <em>Kick</em>, <em>Housefull 3</em>, <em>Judwaa 2</em> and <em>Vikrant Rona</em>, among other projects.</p></div></article>
 </div><div id="newsNoResults" class="no-results hidden">No matching news cards found.</div></div></section>
+
+
+<section id="cannes" class="cannes-section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Cannes Film Festival</div>
+      <h2>Jacqueline Fernandez in Cannes (2024–2026)</h2>
+      <p>Verified Cannes-season looks from Jacqueline Fernandez's 2024 debut, her 2025 Women in Cinema appearance, and her 2026 Global Gift Gala appearance.</p>
+    </div>
+    <div class="cannes-grid">
+      <article class="cannes-card">
+        <a href="https://www.indiatoday.in/movies/celebrities/story/jacqueliene-fernandez-rose-gold-bodycon-gown-cannes-2024-2541612-2024-05-20" target="_blank" rel="noopener">
+          <img src="https://aniportalimages.s3.amazonaws.com/media/details/ANI-20240520150033.jpg" alt="Jacqueline Fernandez at Cannes 2024 in a rose-gold Mikael D Couture gown" loading="lazy">
+        </a>
+        <div class="cannes-copy"><span class="tag">2024</span><h3>Rose-gold red-carpet debut</h3><p>Jacqueline made her Cannes red-carpet debut in May 2024 in a shimmering rose-gold, strapless Mikael D Couture gown, accessorised with Hassanzade jewellery.</p><a href="https://www.indiatoday.in/movies/celebrities/story/jacqueliene-fernandez-rose-gold-bodycon-gown-cannes-2024-2541612-2024-05-20" target="_blank" rel="noopener">View source &amp; more photos →</a></div>
+      </article>
+      <article class="cannes-card">
+        <a href="https://www.tupaki.com/photogallery/jacqueline-red-carpet-spring-summer-1426749" target="_blank" rel="noopener">
+          <img src="https://content.tupaki.com/h-upload/2025/05/16/806544-7xuy4ltk.jpg" alt="Jacqueline Fernandez at Cannes 2025 in a dramatic red gown" loading="lazy">
+        </a>
+        <div class="cannes-copy"><span class="tag">2025</span><h3>Women in Cinema — red gown</h3><p>At the Red Sea Film Foundation's Women in Cinema gala during Cannes 2025, she wore a dramatic red Nicole + Felicia Spring Summer 2025 gown with sculptural floral detailing.</p><a href="https://www.indiatoday.in/movies/celebrities/story/jacqueline-fernandez-brings-old-hollywood-glam-to-cannes-2025-in-red-gown-pics-2725869-2025-05-16/" target="_blank" rel="noopener">View 2025 coverage →</a></div>
+      </article>
+      <article class="cannes-card">
+        <img src="https://images.filmibeat.com/ph-big/2026/05/jacqueline-fernandez-turns-cannes-into-her-personal-runway-at-global-gift-gala-stunning-gallery-inside1779344684_1.jpg" alt="Jacqueline Fernandez at the Global Gift Gala during Cannes 2026" loading="lazy">
+        <div class="cannes-copy"><span class="tag">2026</span><h3>Global Gift Gala</h3><p>At the Global Gift Gala during the 79th Cannes Film Festival on May 20, 2026, Jacqueline appeared in a Richard Quinn Spring/Summer 2026 strapless gown with a black velvet bodice, cream embroidered detailing, pale-yellow draped skirt, long black gloves and a large white floral waist detail.</p><small style="color:#777">Photo: Filmibeat / courtesy of Jacqueline Fernandez's Instagram</small></div>
+      </article>
+    </div>
+    <p class="cannes-note"><strong>Image credits:</strong> The 2026 image shown above is from Filmibeat's May 21, 2026 Cannes gallery, credited to Jacqueline Fernandez's Instagram. Getty Images also has verified editorial photographs from her May 20, 2026 Global Gift Gala appearance.</p>
+  </div>
+</section>
 
 <section class="section-dark" id="biography"><div class="container about-grid"><div>
 <div class="eyebrow">Biography</div><h2 style="font:700 42px Georgia,serif;margin-top:6px">Jacqueline Fernandez</h2>
